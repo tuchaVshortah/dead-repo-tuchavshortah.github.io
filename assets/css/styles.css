@@ -62,8 +62,10 @@ li:hover {
 a.white {
     color: #FDFDFB;
 }
+
 a.red {
-    color: #F62B00;
+    color: #FF0000;
+    text-transform: uppercase;
 }
 
 a {
