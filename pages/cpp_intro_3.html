@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>C++ Intro</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="index.html"><h1><i><b>NurBlog</i></b></h1></a>
+        <p>NurBlog is a place where you can find helpful information</p>
+        <ul class="no-bullets">
+          <li>
+            <a href="cpp_lessons.html" class="white">All lessons</a>
+          </li>
+          <li>
+            <a href="cpp_intro_2.html" class="white">Previous part</a>
+          </li>
+          <li>
+            <a href="cpp_intro_4.html" class="white">Next part</a>
+          </li>
+          <li>
+            <a href="#" class="white">A brief dive into Java</a>
+          </li>
+          <li>
+            <a href="#" class="white">Linux</a>
+          </li>
+          <li>
+            <a href="#" class="white">Assembler</a>
+          </li>
+        </ul>
+      </header>
+      <section>
+        <p class="para-font">The // symbol begins a C++ single-line comment, which tells the compiler to ignore everything from the // symbol to the end of the line. The /* and */ pair of symbols denotes a C-style multi-line comment. Everything in between the symbols is ignored.All of these comments give the reader a good idea of what the library, program, or function is trying to accomplish without having to look at the actual code. The user (possibly someone else, or you if you’re trying to reuse code you’ve previously written) can tell at a glance whether the code is relevant to what he or she is trying to accomplish. This is particularly important when working as part of a team, where not everybody will be familiar with all of the code.</p>
+        <p class="para-font"> All computers have memory, called RAM (short for random access memory), that is available for your programs to use. You can think of RAM as a series of numbered mailboxes that can each be used to hold a piece of data while the program is running. A single piece of data, stored in memory somewhere, is called a value. In some older programming languages (like Apple Basic), you could directly access these mailboxes (a statement could say something like go get the value stored in mailbox number 7532). In C++, direct memory access is not allowed. Instead, we access memory indirectly through an object. An object is a region of storage (usually memory) that has a value and other associated properties (that we’ll cover in future lessons). How the compiler and operating system work to assign memory to objects is beyond the scope of this lesson. But the key point here is that rather than say go get the value stored in mailbox number 7532, we can say, go get the value stored by this object. This means we can focus on using objects to store and retrieve values, and not have to worry about where in memory they’re actually being placed. Objects can be named or unnamed (anonymous). A named object is called a variable, and the name of the object is called an identifier. In our programs, most of the objects we create and use will be variables.</p>
+        <p class="para-font">In order to create a variable, we use a special kind of declaration statement called a definition (we’ll clarify the difference between a declaration and definition later).At compile time, when the compiler sees this statement, it makes a note to itself that we are defining a variable, giving it the name x, and that it is of type int (more on types in a moment). From that point forward (with some limitations that we’ll talk about in a future lesson), whenever the compiler sees the identifier x, it will know that we’re referencing this variable.
+When the program is run (called runtime), the variable will be instantiated. Instantiation is a fancy word that means the object will be created and assigned a memory address. Variables must be instantiated before they can be used to store values. For the sake of example, let’s say that variable x is instantiated at memory location 140. Whenever the program uses variable x, it will access the value in memory location 140. An instantiated object is sometimes also called an instance.</p>
+        <p class="para-font">The input/output library (io library) is part of the C++ standard library that deals with basic input and output. We’ll use the functionality in this library to get input from the keyboard and output data to the console. The io part of iostream stands for input/output. The iostream library contains a few predefined variables for us to use. One of the most useful is std::cout, which allows us to send data to the console to be printed as text. cout stands for “character output”.Separate output statements don’t result in separate lines of output on the console. If we want to print separate lines of output to the console, we need to tell the console when to move the cursor to the next line. One way to do that is to use std::endl. When output with std::cout, std::endl prints a newline character to the console (causing the cursor to go to the start of the next line). In this context, endl stands for “end line”.</p>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
+</html>

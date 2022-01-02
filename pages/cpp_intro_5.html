@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <title>C++ Intro</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <div>
+      <header>
+        <a href="index.html"><h1><i><b>NurBlog</i></b></h1></a>
+        <p>NurBlog is a place where you can find helpful information</p>
+        <ul class="no-bullets">
+          <li>
+            <a href="cpp_lessons.html" class="white">All lessons</a>
+          </li>
+          <li>
+            <a href="cpp_intro_4.html" class="white">Previous part</a>
+          </li>
+          <li>
+            <a href="#" class="white">A brief dive into Java</a>
+          </li>
+          <li>
+            <a href="#" class="white">Linux</a>
+          </li>
+          <li>
+            <a href="#" class="white">Assembler</a>
+          </li>
+        </ul>
+      </header>
+      <section>
+        <p class="para-font">A forward declaration allows us to tell the compiler about the existence of an identifier before actually defining the identifier. In the case of functions, this allows us to tell the compiler about the existence of a function before we define the function’s body. This way, when the compiler encounters a call to the function, it’ll understand that we’re making a function call, and can check to ensure we’re calling the function correctly, even if it doesn’t yet know how or where the function is defined.
+To write a forward declaration for a function, we use a declaration statement called a function prototype. The function prototype consists of the function’s return type, name, parameters, but no function body (the curly braces and everything in between them), terminated with a semicolon.</p>
+        <p class="para-font">A declaration is all that is needed to satisfy the compiler. This is why we can use a forward declaration to tell the compiler about an identifier that isn’t actually defined until later. In C++, all definitions also serve as declarations. This is why int x appears in our examples for both definitions and declarations. Since int x is a definition, it’s a declaration too. In most cases, a definition serves our purposes, as it satisfies both the compiler and linker. We only need to provide an explicit declaration when we want to use an identifier before it has been defined. While it is true that all definitions are declarations, the converse is not true: all declarations are not definitions. An example of this is the function prototype -- it satisfies the compiler, but not the linker. These declarations that aren’t definitions are called pure declarations. Other types of pure declarations include forward declarations for variables and type declarations (you will encounter these in future lessons, no need to worry about them now). The ODR doesn’t apply to pure declarations (it’s the one definition rule, not the one declaration rule), so you can have as many pure declarations for an identifier as you desire (although having more than one is redundant).</p>
+        <p class="para-font">Remember, the compiler compiles each file individually. It does not know about the contents of other code files, or remember anything it has seen from previously compiled code files. So even though the compiler may have seen the definition of function add previously (if it compiled add.cpp first), it doesn’t remember. This limited visibility and short memory is intentional, so that files may have functions or variables that have the same names without conflicting with each other.</p>
+      </section>
+      <footer></footer>
+    </div>
+  </body>
+</html>
