@@ -1,74 +1,28 @@
-header {
-    color: #FDFDFB;
-    background-color: #171717;
-    width: 15%;
-    max-width: 175px;
-    float: left;
-    position: fixed;
-    border: 1px solid #171717;
-    border-radius: 5px;
-    padding: 10px 20px;
-    margin: 30px 0 20px;
-}
-
 body {
-    -webkit-font-smoothing: antialiased;
-    background-image: url('../images/LowLife.jpg');
-    color: #B00361;
-    text-shadow: 1px 1px 3px #FDFDFB
+  background: url('../images/LowLife.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
 }
 
-section {
-    margin-top: 30px;
-    margin-left: 15%;
-    width: 50%;
-    max-width: 1000px;
+.text {
+    color: #b9bfcb;
 }
 
-.big-font {
-    font-size: 60px;
-    font-style: italic;
+.highlight {
+     color: #4dabc6;
 }
 
-.para-font {
-    font-size: 25px;
+.background {
+    background: #282c34;
 }
 
-ul.no-bullets {
-    list-style-type: none;
-    list-style: none;
-    list-style-position: inside;
-    list-style: disc;
-    padding: 0;
-    margin: 0;
+.inline-background {
+    background: #434b56;
 }
 
-li {
-    list-style-type: none;
-    list-style: none;
-    width: 80%;
-    height: 25px;
-    padding: 5px 5px;
-    margin-bottom: 15px;
-    background: #AF0011;
-    border-radius: 5px;
-    box-shadow: -1px 1px 3px 0px #AF0011;
-}
-
-li:hover {
-    background: linear-gradient(to top, #C3001D 0%, #950119 100%);
-}
-
-a.white {
-    color: #FDFDFB;
-}
-
-a.red {
-    color: #FF0000;
-    text-transform: uppercase;
-}
-
-a {
-    text-decoration: none;
-    font-size: 100%;
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    color: #c371af;
+    background-color: #373b48;
 }
