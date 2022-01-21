@@ -1,0 +1,28 @@
+body {
+  background: url('../images/LowLife.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+}
+
+.text {
+    color: #b9bfcb;
+}
+
+.highlight {
+     color: #4dabc6;
+}
+
+.background {
+    background: #282c34;
+}
+
+.inline-background {
+    background: #434b56;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    color: #c371af;
+    background-color: #373b48;
+}
