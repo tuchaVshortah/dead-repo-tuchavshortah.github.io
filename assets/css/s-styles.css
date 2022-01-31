@@ -1,0 +1,62 @@
+html {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform-style: preserve-3d;
+  perspective: .25px;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: -1;
+  transform-origin: center;
+  width: 100vw;
+  height: 100vh;
+  background: url('../images/lowlife4k.jpg');
+  filter: blur(.125px);
+  background-position: center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  transform: translateZ(-1px) scale(3);
+}
+
+.text {
+    color: #b9bfcb;
+}
+
+.highlight {
+     color: #4dabc6;
+}
+
+.background {
+    background: #282c34;
+}
+
+.inline-background {
+    background: #434b56;
+}
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+    color: #c371af;
+    background-color: #373b48;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
