@@ -1,5 +1,3 @@
-import {performance} from 'perf_hooks';
-
 function writeCookie(name,value,days) {
     var date, expires;
     if (days) {
