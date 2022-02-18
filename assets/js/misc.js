@@ -27,9 +27,9 @@ function readCookie(name) {
 
 function redir(){
     var delay = 3000;
-    var url = "http://tuchavshortah.github.io/pages/main.html";
+    var url = 'http://tuchavshortah.github.io/pages/main.html';
     setTimeout(function () {
-        $(document).prop('title', "Redirecting...");
+        $(document).prop('title', 'Redirecting...');
         window.location.replace(url);
         }, delay
     );
