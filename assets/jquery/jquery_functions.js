@@ -8,8 +8,8 @@ $(document).ready(function(){
     var url = "https://tuchavshortah.github.io/pages/main.html";
     setTimeout(function () {
         window.location = url;
-        }, delay);
-    });
+        }, delay
+    );
 });
 
 $(document).ready(function(){
