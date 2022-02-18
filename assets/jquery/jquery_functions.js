@@ -2,19 +2,15 @@ $.ajaxSetup({
   cache: true
 });
 
-var redir = true;
-$(document).ready(function(){
-    if(redir === true){
-        $(document).show();
-        var delay = 2000;
-        var url = "https://tuchavshortah.github.io/pages/main.html";
-        setTimeout(function () {
-            window.location = url;
-            }, delay
-        );
-    }
-    redir = false;
-});
+function redir(){
+    $(document).show();
+    var delay = 3000;
+    var url = "https://tuchavshortah.github.io/pages/main.html";
+    setTimeout(function () {
+        window.location = url;
+        }, delay
+    );
+}
 
 $(document).ready(function(){
     $("img").hover(
