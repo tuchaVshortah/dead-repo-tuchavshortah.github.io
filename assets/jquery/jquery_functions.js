@@ -6,8 +6,8 @@ $.ajaxSetup({
 $(document).ready(function(){
     $(document).show();
     $(document).delay(2500);
-    $.get('pages/main.html', function(){
-        $.document.prop('title', 'Redirecting...');
+    $(document).get('pages/main.html', function(){
+        $(document).prop('title', 'Redirecting...');
     });
 });
 
