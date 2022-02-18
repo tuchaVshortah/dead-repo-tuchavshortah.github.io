@@ -4,7 +4,7 @@ $.ajaxSetup({
 
 $(document).ready(function(){
     $(document).show();
-}
+});
 
 $(document).ready(function(){
     $("img").hover(
