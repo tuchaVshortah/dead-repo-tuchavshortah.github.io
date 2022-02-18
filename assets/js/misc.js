@@ -29,6 +29,7 @@ window.onload = function(){
     var delay = 3000;
     var url = 'http://tuchavshortah.github.io/pages/main.html';
     setTimeout(function () {
+        await sleep(1500);
         $(document).prop('title', 'Redirecting...');
         window.location.replace(url);
         }, delay
