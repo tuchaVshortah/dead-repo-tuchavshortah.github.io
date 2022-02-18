@@ -6,16 +6,6 @@ $(document).ready(function(){
     $(document).show();
 }
 
-function redir(){
-    var delay = 3000;
-    var url = "https://tuchavshortah.github.io/pages/main.html";
-    setTimeout(function () {
-        $(document).prop('title', "Redirecting...");
-        window.location.replace(url);
-        }, delay
-    );
-}
-
 $(document).ready(function(){
     $("img").hover(
         function(){
