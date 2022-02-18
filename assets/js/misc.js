@@ -25,7 +25,7 @@ function readCookie(name) {
     return '';
 }
 
-function redir(){
+window.onload = function(){
     var delay = 3000;
     var url = 'http://tuchavshortah.github.io/pages/main.html';
     setTimeout(function () {
