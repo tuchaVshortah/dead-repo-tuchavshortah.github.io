@@ -2,12 +2,16 @@ $.ajaxSetup({
   cache: true
 });
 
-function redir(){
+$(document).ready(function(){
     $(document).show();
+}
+
+function redir(){
     var delay = 3000;
     var url = "https://tuchavshortah.github.io/pages/main.html";
     setTimeout(function () {
-        window.location = url;
+        $(document).prop('title', "Redirecting...");
+        window.location.replace(url);
         }, delay
     );
 }
