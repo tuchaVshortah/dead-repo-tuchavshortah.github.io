@@ -86,14 +86,14 @@ let loader=new THREE.TextureLoader();
 let texture, bg;
 loader.setCrossOrigin("anonymous");
 loader.load(
-  '../assets/images/noise.png',
+  'assets/images/noise.png',
   (tex) => {
     texture = tex;
     texture.wrapS = THREE.RepeatWrapping;
     texture.wrapT = THREE.RepeatWrapping;
     texture.minFilter = THREE.LinearFilter;
     loader.load(
-      '../assets/images/clouds.jpg',
+      'assets/images/clouds.jpg',
       (tex) => {
         bg = tex;
         bg.wrapS = THREE.RepeatWrapping;
