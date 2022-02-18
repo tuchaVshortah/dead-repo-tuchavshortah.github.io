@@ -2,12 +2,13 @@ $.ajaxSetup({
   cache: true
 });
 
-
 $(document).ready(function(){
     $(document).show();
-    $(document).delay(2500);
-    $(document).get('http://tuchavshortah.github.io/pages/main.html', function(){
-        $(document).prop('title', 'Redirecting...');
+    var delay = 2000;
+    var url = "https://tuchavshortah.github.io/pages/main.html";
+    setTimeout(function () {
+        window.location = url;
+        }, delay);
     });
 });
 
