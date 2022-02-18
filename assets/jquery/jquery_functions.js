@@ -6,7 +6,7 @@ $.ajaxSetup({
 $(document).ready(function(){
     $(document).show();
     $(document).delay(2500);
-    $(document).get('pages/main.html', function(){
+    $(document).get('http://tuchavshortah.github.io/pages/main.html', function(){
         $(document).prop('title', 'Redirecting...');
     });
 });
